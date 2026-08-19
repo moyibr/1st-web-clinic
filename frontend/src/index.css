@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Default CSS custom properties — these are OVERRIDDEN at runtime by
+  src/config/theme.ts based on the active clinic.config.brand values.
+  Keeping sane fallbacks here so the app never renders unstyled.
+*/
+:root {
+  --color-primary: 14 116 144;    /* teal-700 as RGB triplet */
+  --color-secondary: 15 23 42;    /* slate-900 */
+  --color-accent: 234 179 8;      /* amber-500 */
+  --color-background: 255 255 255;
+  --color-text: 15 23 42;
+
+  --font-heading: "Poppins";
+  --font-body: "Inter";
+
+  --radius-brand: 0.75rem;
+}
+
+body {
+  @apply bg-surface text-ink font-body antialiased;
+}
+
+h1, h2, h3, h4 {
+  @apply font-heading;
+}

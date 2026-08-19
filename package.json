@@ -1,0 +1,17 @@
+{
+  "name": "dental-clinic-white-label-template",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Config-driven, white-label dental clinic website template (multi-client resale)",
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "dev:web": "pnpm --filter frontend dev",
+    "dev:api": "pnpm --filter backend dev",
+    "build:web": "pnpm --filter frontend build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

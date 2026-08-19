@@ -1,0 +1,179 @@
+{
+  "_note": "Reference archive copy for records only. The live source of truth is frontend/src/config/clinic.config.ts (kept in sync manually, or generated from this file if you later automate onboarding).",
+  "meta": {
+    "clientSlug": "demo-clinic",
+    "siteTitle": "Smile Care Dental Clinic | Best Dentist in Bandra, Mumbai",
+    "tagline": "Your Smile, Our Priority",
+    "metaDescription": "Smile Care Dental Clinic in Bandra, Mumbai offers painless root canal, dental implants, braces & cosmetic dentistry with 15+ years of trusted care.",
+    "faviconPath": "/assets/clients/demo-clinic/favicon.png",
+    "logoLightPath": "/assets/clients/demo-clinic/logo-light.png",
+    "logoDarkPath": "/assets/clients/demo-clinic/logo-dark.png",
+    "ogImagePath": "/assets/clients/demo-clinic/og-image.jpg"
+  },
+  "brand": {
+    "colors": {
+      "primary": "#0E7490",
+      "secondary": "#0F172A",
+      "accent": "#EAB308",
+      "background": "#FFFFFF",
+      "text": "#0F172A"
+    },
+    "fontHeading": "Poppins",
+    "fontBody": "Inter",
+    "borderRadius": "soft"
+  },
+  "clinic": {
+    "name": "Smile Care Dental Clinic",
+    "legalName": "Smile Care Dental Clinic Pvt. Ltd.",
+    "establishedYear": 2009,
+    "tagline": "Your Smile, Our Priority",
+    "aboutShort": "A patient-first dental clinic in the heart of Bandra, combining modern technology with gentle, personalized care.",
+    "aboutLong": "Founded in 2009, Smile Care Dental Clinic has been serving the Bandra community for over 15 years with a commitment to painless, high-quality dental care.",
+    "specialties": ["General Dentistry", "Orthodontics", "Dental Implants", "Cosmetic Dentistry", "Pediatric Dentistry"],
+    "accreditations": [
+      { "name": "Indian Dental Association", "logoPath": "/assets/clients/demo-clinic/accreditations/ida.png" },
+      { "name": "ISO 9001:2015", "logoPath": "/assets/clients/demo-clinic/accreditations/iso.png" }
+    ]
+  },
+  "contact": {
+    "phone": [
+      { "label": "Clinic", "number": "+91 98765 43210" },
+      { "label": "Reception", "number": "+91 22 2640 1234" }
+    ],
+    "whatsappNumber": "919876543210",
+    "email": [
+      { "label": "General Enquiries", "address": "hello@smilecaredental.example" },
+      { "label": "Appointments", "address": "appointments@smilecaredental.example" }
+    ],
+    "address": {
+      "line1": "12, Hill Road",
+      "line2": "Near Mount Mary Church",
+      "city": "Bandra West, Mumbai",
+      "state": "Maharashtra",
+      "pincode": "400050",
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=example-embed-id",
+      "mapDirectionsUrl": "https://maps.google.com/?q=Smile+Care+Dental+Clinic+Bandra"
+    },
+    "timings": [
+      { "day": "Monday", "openTime": "10:00 AM", "closeTime": "8:00 PM", "isClosed": false },
+      { "day": "Tuesday", "openTime": "10:00 AM", "closeTime": "8:00 PM", "isClosed": false },
+      { "day": "Wednesday", "openTime": "10:00 AM", "closeTime": "8:00 PM", "isClosed": false },
+      { "day": "Thursday", "openTime": "10:00 AM", "closeTime": "8:00 PM", "isClosed": false },
+      { "day": "Friday", "openTime": "10:00 AM", "closeTime": "8:00 PM", "isClosed": false },
+      { "day": "Saturday", "openTime": "10:00 AM", "closeTime": "6:00 PM", "isClosed": false },
+      { "day": "Sunday", "openTime": "", "closeTime": "", "isClosed": true }
+    ],
+    "emergencyContact": "+91 98765 00000"
+  },
+  "socials": {
+    "instagram": "https://instagram.com/smilecaredental",
+    "facebook": "https://facebook.com/smilecaredental",
+    "youtube": "https://youtube.com/@smilecaredental",
+    "googleBusinessUrl": "https://g.page/smilecaredental"
+  },
+  "doctors": [
+    {
+      "id": "dr-anjali-mehta",
+      "name": "Dr. Anjali Mehta",
+      "designation": "Chief Dental Surgeon & Founder",
+      "qualifications": ["BDS", "MDS - Orthodontics"],
+      "specialization": "Orthodontics & Cosmetic Dentistry",
+      "experienceYears": 16,
+      "bio": "Dr. Anjali Mehta has been transforming smiles in Bandra for over 16 years, specializing in invisible aligners and smile makeovers.",
+      "photoPath": "/assets/clients/demo-clinic/doctors/anjali-mehta.jpg",
+      "registrationNumber": "MDC-12345",
+      "consultingDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+    },
+    {
+      "id": "dr-rohan-shah",
+      "name": "Dr. Rohan Shah",
+      "designation": "Implantologist",
+      "qualifications": ["BDS", "MDS - Oral Implantology"],
+      "specialization": "Dental Implants & Oral Surgery",
+      "experienceYears": 10,
+      "bio": "Dr. Rohan Shah is a specialist in single-sitting implants and full-mouth rehabilitation.",
+      "photoPath": "/assets/clients/demo-clinic/doctors/rohan-shah.jpg",
+      "registrationNumber": "MDC-67890",
+      "consultingDays": ["Monday", "Wednesday", "Friday", "Saturday"]
+    }
+  ],
+  "services": [
+    {
+      "id": "svc-root-canal",
+      "name": "Root Canal Treatment",
+      "slug": "root-canal-treatment",
+      "shortDescription": "Painless, single-sitting root canal therapy using rotary endodontics.",
+      "longDescription": "Our root canal treatments use advanced rotary endodontic technology to ensure a virtually painless experience.",
+      "icon": "tooth-icon",
+      "priceRange": "₹3,500 - ₹8,000",
+      "durationEstimate": "45-60 mins",
+      "featured": true
+    },
+    {
+      "id": "svc-implants",
+      "name": "Dental Implants",
+      "slug": "dental-implants",
+      "shortDescription": "Permanent tooth replacement with titanium implants.",
+      "longDescription": "Dental implants offer a long-term, natural-looking solution for missing teeth.",
+      "icon": "implant-icon",
+      "priceRange": "₹25,000 - ₹45,000 per implant",
+      "featured": true
+    },
+    {
+      "id": "svc-braces",
+      "name": "Braces & Invisible Aligners",
+      "slug": "braces-invisible-aligners",
+      "shortDescription": "Metal braces, ceramic braces, and clear aligners for all ages.",
+      "longDescription": "We design a treatment plan tailored to your smile goals and lifestyle.",
+      "icon": "braces-icon",
+      "featured": true
+    },
+    {
+      "id": "svc-whitening",
+      "name": "Teeth Whitening",
+      "slug": "teeth-whitening",
+      "shortDescription": "In-clinic laser whitening for a brighter smile in one visit.",
+      "longDescription": "Our laser whitening treatment can lighten your teeth by several shades in under an hour.",
+      "icon": "whitening-icon",
+      "featured": false
+    }
+  ],
+  "gallery": [],
+  "testimonials": [
+    {
+      "id": "test-1",
+      "patientName": "Priya Sharma",
+      "rating": 5,
+      "text": "Dr. Mehta made my root canal completely painless. Highly recommend Smile Care!",
+      "source": "Google"
+    },
+    {
+      "id": "test-2",
+      "patientName": "Arjun Kapoor",
+      "rating": 5,
+      "text": "Got my implants done here — professional staff and great results.",
+      "source": "Manual"
+    }
+  ],
+  "appointmentForm": {
+    "enabled": true,
+    "fieldsRequired": ["name", "phone"],
+    "availableServices": ["Root Canal Treatment", "Dental Implants", "Braces & Invisible Aligners", "Teeth Whitening", "General Checkup"],
+    "notifyEmail": "appointments@smilecaredental.example",
+    "notifyWhatsapp": true,
+    "successMessage": "Thank you! We've received your request and will call you shortly to confirm your appointment."
+  },
+  "seo": {
+    "keywords": ["dentist in bandra", "root canal mumbai", "dental implants bandra", "best dentist mumbai"],
+    "structuredDataType": "Dentist"
+  },
+  "featureFlags": {
+    "showTestimonials": true,
+    "showGallery": true,
+    "showBlog": false,
+    "enableDarkMode": false,
+    "enableOnlineBooking": true,
+    "enableMultiLanguage": false,
+    "enableWhatsappBusinessApi": false
+  }
+}

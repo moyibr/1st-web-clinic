@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/appointment.ts": {
+      "maxDuration": 10
+    }
+  }
+}

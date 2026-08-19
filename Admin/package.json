@@ -1,0 +1,6 @@
+{
+  "name": "admin",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Reserved for a future admin dashboard (edit config/testimonials/gallery/leads without touching code). Not implemented yet — placeholder only so the pnpm workspace stays valid."
+}
