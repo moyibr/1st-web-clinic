@@ -39,6 +39,4 @@ export function applyClinicTheme(config: ClinicConfig): void {
     rounded: "1.25rem",
   };
   root.style.setProperty("--radius-brand", radiusMap[borderRadius]);
-
-  document.title = config.meta.siteTitle;
 }
