@@ -4,10 +4,12 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import { clinicConfig } from "@/config/clinic.config";
 import { applyClinicTheme } from "@/config/theme";
+import { applySeo } from "@/lib/seo";
 import "./index.css";
 
-// Apply the active client's brand colors/fonts before first paint.
+// Apply the active client's brand colors/fonts and SEO/social-share metadata before first paint.
 applyClinicTheme(clinicConfig);
+applySeo(clinicConfig);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

@@ -24,7 +24,7 @@ keeping hosting costs low while onboarding is cheap and fast.
 ├── backend/    Shared multi-tenant Vercel API — appointment leads, email notifications
 ├── Admin/      Reserved for a future config/leads dashboard (not built yet)
 ├── clients/    Per-client config + asset archive — one reference folder per client
-└── docs/       Onboarding + config reference (WIP)
+└── docs/       Onboarding + config reference
 ```
 
 - **Frontend** reads `frontend/src/config/clinic.config.ts` as the live source of truth for a
@@ -69,6 +69,9 @@ Run from the repo root (fan out to workspaces via pnpm filters):
 
 ## Onboarding a new client
 
+Full step-by-step (asset checklist, tenant registration, deploy, pre-launch checklist) is in
+[`docs/ONBOARDING.md`](docs/ONBOARDING.md). Short version:
+
 1. Duplicate `clients/demo-clinic/` → `clients/<new-slug>/`, updating `clinic.config.json` and
    dropping in brand assets (logo, favicon, OG image, gallery, doctor photos).
 2. Mirror those values into `frontend/src/config/clinic.config.ts` and set
@@ -78,10 +81,14 @@ Run from the repo root (fan out to workspaces via pnpm filters):
    and allowed origins).
 4. Deploy the frontend (one Vercel project per client) pointed at the shared backend URL.
 
+Every `clinic.config.ts` field is documented in [`docs/CONFIG_REFERENCE.md`](docs/CONFIG_REFERENCE.md).
+
 ## Deployment
 
 - **Frontend** — one Vercel project per client, built from this repo with that client's
-  `VITE_CLIENT_SLUG` / `VITE_API_URL` env vars.
+  `VITE_CLIENT_SLUG` / `VITE_API_URL` env vars. `frontend/vercel.json` rewrites every path to
+  `index.html` so React Router's client-side routes (e.g. `/services/root-canal-treatment`)
+  don't 404 on a hard refresh or shared link.
 - **Backend** — a single shared Vercel deployment serving `/api/appointment` for all tenants;
   see [`backend/README.md`](backend/README.md) for the full request lifecycle (validation,
   honeypot, duplicate guard, per-tenant email/WhatsApp notifications).
@@ -90,4 +97,3 @@ Run from the repo root (fan out to workspaces via pnpm filters):
 
 - `Admin/` — a dashboard for clients to edit their config and view leads without a code deploy
   (not started; see [`Admin/README.md`](Admin/README.md)).
-- `docs/` — step-by-step onboarding + full config reference (in progress).
